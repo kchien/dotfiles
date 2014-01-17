@@ -1,0 +1,14 @@
+[user]
+	name = Kenrick Chien
+	email = ken.chien@gmail.com
+[alias]
+	s = status
+        d = diff --color
+        dc = diff --cached --color
+        l = log --graph --color
+        ci = commit
+	co = checkout
+[credential]
+	helper = osxkeychain
+[core]
+	excludesfile = /Users/ken/.gitignore_global
