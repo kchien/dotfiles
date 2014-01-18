@@ -20,11 +20,11 @@ map <leader>c :call ClearTrailingWhitespace()<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " ConvertCamelToSnake 
-" Not perfect since the leading char will have an underscore in front of it.
-" Need to fix up...
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 function! ConvertCamelToSnake()
-  :s/\([A-Z]\)/_\l\1/g
+  "only look for capital letters after _, lowercase letters, and digits
+  :s/\([_a-z0-9]\)\([A-Z]\)/\1_\l\2/g
+  :normal gu$
 endf
 map <leader>s :call ConvertCamelToSnake()<CR>
 
