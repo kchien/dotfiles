@@ -7,6 +7,7 @@ alias ll="ls -al"
 alias lt="ls -rot"
 alias lr="ls -R"
 alias mysql="cd /usr/local/mysql && sudo ./bin/mysqld_safe"
+alias prydev='RAILS_ENV=development pry -r ./config/environment'
 
 #Postgres command line utils
 PATH="/Applications/Postgres93.app/Contents/MacOS/bin:$PATH"
