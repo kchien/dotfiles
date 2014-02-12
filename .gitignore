@@ -38,3 +38,4 @@ code/
 .subversion/
 .vagrant.d/
 .viminfo
+.vim/.netrwhist
