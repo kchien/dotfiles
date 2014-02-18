@@ -2,12 +2,14 @@
 	name = Kenrick Chien
 	email = ken.chien@gmail.com
 [alias]
+        b = branch
 	s = status
         d = diff --color
         dc = diff --cached --color
-        l = log --graph --color
+        l = log --graph --color --pretty=oneline
         ci = commit
 	co = checkout
+	rc = rebase --continue
 [credential]
 	helper = osxkeychain
 [core]
