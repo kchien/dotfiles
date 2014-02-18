@@ -8,6 +8,7 @@
         dc = diff --cached --color
         l = log --graph --color --pretty=oneline
         ci = commit
+	cp = cherry-pick
 	co = checkout
 	rc = rebase --continue
 [credential]
