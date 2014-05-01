@@ -9,6 +9,12 @@ alias lr="ls -R"
 alias mysql="cd /usr/local/mysql && sudo ./bin/mysqld_safe"
 alias prydev='RAILS_ENV=development pry -r ./config/environment'
 
+function fa() {
+  alias|grep $1
+}
+
+
+
 export BUNDLER_EDITOR="mvim"
 
 #Postgres command line utils
