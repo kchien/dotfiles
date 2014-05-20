@@ -28,6 +28,17 @@ function! ConvertCamelToSnake()
 endf
 map <leader>s :call ConvertCamelToSnake()<CR>
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" convertsnaketocamel
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+function! ConvertSnakeToCamel()
+  "incomplete: doesn't capitalize the first character, but capitalizes every letter after an underscore
+  :s/_\([a-z0-9]\)/\U\1/g
+  :normal gu$
+endf
+""leader j for Java since camel case is popular in that language...
+map <leader>j :call ConvertSnakeToCamel()<CR>
+
 " PromoteToLet() below shamelessly taken from Gary Bernhardt's .vimrc
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " PROMOTE VARIABLE TO RSPEC LET
