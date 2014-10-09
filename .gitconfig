@@ -6,7 +6,7 @@
 	s = status
         d = diff --color
         dc = diff --cached --color
-        l = log --graph --color --pretty=oneline
+        l = log --graph --color --abbrev-commit --format=format:'%Cgreen %h %Creset %s %Cred %ae' --decorate
         ci = commit
 	cp = cherry-pick
 	co = checkout
