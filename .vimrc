@@ -5,6 +5,12 @@ set history=50
 set ruler
 set incsearch
 
+"""""""""""""""""""
+" indentation
+"""""""""""""""""""
+filetype plugin indent on
+autocmd FileType html,ruby setlocal shiftwidth=2 tabstop=2
+
 if &t_Co > 2 || has("gui_running")
   syntax on
   set hlsearch
