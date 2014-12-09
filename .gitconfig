@@ -7,6 +7,7 @@
         d = diff --color
         dc = diff --cached --color
         l = log --graph --color --abbrev-commit --format=format:'%Cgreen %h %Creset %s %Cred %ae' --decorate
+        l2 = log --graph --abbrev-commit --decorate
         ci = commit
 	cp = cherry-pick
 	co = checkout
