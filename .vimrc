@@ -4,6 +4,9 @@ set number
 set history=50
 set ruler
 set incsearch
+" Remove all autocommands for the current group, so autocommands will not appear twice
+" when sourcing the .vimrc twice.
+autocmd!
 
 """""""""""""""""""
 " indentation
@@ -25,7 +28,7 @@ map <leader>c :call ClearTrailingWhitespace()<CR>
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" ConvertCamelToSnake 
+" ConvertCamelToSnake
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 function! ConvertCamelToSnake()
   "only look for capital letters after _, lowercase letters, and digits
