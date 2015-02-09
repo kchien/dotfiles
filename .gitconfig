@@ -14,6 +14,7 @@
 	cp = cherry-pick
 	co = checkout
 	rc = rebase --continue
+	rs = rebase -i HEAD~2
 	sp = stash pop
 [credential]
 	helper = osxkeychain
