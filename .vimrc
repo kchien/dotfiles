@@ -13,7 +13,7 @@ autocmd!
 " indentation
 """""""""""""""""""
 filetype plugin indent on
-autocmd FileType html,ruby setlocal shiftwidth=2 tabstop=2
+autocmd FileType html,ruby setlocal shiftwidth=2
 
 if &t_Co > 2 || has("gui_running")
   syntax on
