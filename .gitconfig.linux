@@ -1,0 +1,22 @@
+[user]
+	name = Kenrick Chien
+	email = ken.chien@gmail.com
+[alias]
+        b = branch
+	f = fetch
+	s = status
+        d = diff --color
+        dc = diff --cached --color
+        l = log --graph --color --abbrev-commit --format=format:'%Cgreen %h %Creset %s %Cred %ae' --decorate
+        l2 = log --graph --abbrev-commit --decorate
+        lp = log --pretty=oneline --abbrev-commit --decorate
+        ci = commit
+	cp = cherry-pick
+	co = checkout
+	rc = rebase --continue
+	rh = reset --hard HEAD
+	rs = rebase -i HEAD~2
+	sp = stash pop
+[core]
+	excludesfile = /Users/ken/.gitignore_global
+	editor = vim
