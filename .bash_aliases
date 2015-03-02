@@ -1,3 +1,4 @@
+alias g='git'
 alias h='history'
 alias ll='ls -al'
 alias lr='ls -R'
