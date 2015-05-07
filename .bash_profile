@@ -1,5 +1,5 @@
 export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 alias h="history"
 alias ls="ls -F"
