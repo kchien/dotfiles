@@ -14,6 +14,10 @@ function fa() {
   alias|grep $1
 }
 
+pryr() {
+  RAILS_ENV=$1 pry -r ./config/environment
+}
+
 ec2l () {
   source $HOME/.private/aws/$1
 }
