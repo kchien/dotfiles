@@ -14,7 +14,9 @@ function fa() {
   alias|grep $1
 }
 
-
+ec2l () {
+  source $HOME/.private/aws/$1
+}
 
 export BUNDLER_EDITOR="mvim"
 
@@ -36,4 +38,7 @@ export PATH="/usr/local/sbin:$PATH"
 #  https://golang.org/doc/code.html#GOPATH
 #
 #  You may wish to add the GOROOT-based install location to your PATH:
-export PATH=$PATH:/usr/local/opt/go/libexec/bin
+export GOPATH=~/go
+
+export PATH=$PATH:$GOPATH/bin:/usr/local/opt/go/libexec/bin
+
