@@ -1,12 +1,9 @@
 export PATH="$HOME/.rbenv/bin:$PATH"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
-alias be="bundle exec"
-alias h="history"
-alias ls="ls -F"
-alias ll="ls -al"
-alias lt="ls -rot"
-alias lr="ls -R"
+if [ -f $HOME/.bash_aliases ]; then
+  source ~/.bash_aliases
+fi
 #alias mysql="cd /usr/local/mysql && sudo ./bin/mysqld_safe"
 alias prydev='RAILS_ENV=development pry -r ./config/environment'
 
@@ -45,4 +42,5 @@ export PATH="/usr/local/sbin:$PATH"
 export GOPATH=~/go
 
 export PATH=$PATH:$GOPATH/bin:/usr/local/opt/go/libexec/bin
+
 
