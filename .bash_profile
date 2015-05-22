@@ -1,6 +1,3 @@
-export PATH="$HOME/.rbenv/bin:$PATH"
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
 if [ -f $HOME/.bash_aliases ]; then
   source ~/.bash_aliases
 fi
@@ -25,6 +22,7 @@ export BUNDLER_EDITOR="vim"
 #  You may wish to add the GOROOT-based install location to your PATH:
 export GOPATH=~/go
 
+export PATH="$HOME/.rbenv/bin:$PATH"
 #Postgres command line utils
 PATH="/Applications/Postgres93.app/Contents/MacOS/bin:$PATH"
 #AWS Elastic Beanstalk 
@@ -36,3 +34,5 @@ export PATH="/usr/local/sbin:$PATH"
 export PATH=$PATH:$GOPATH/bin:/usr/local/opt/go/libexec/bin
 
 export SPEC_OPTS="--format documentation --color"
+
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
