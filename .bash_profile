@@ -4,8 +4,6 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 if [ -f $HOME/.bash_aliases ]; then
   source ~/.bash_aliases
 fi
-#alias mysql="cd /usr/local/mysql && sudo ./bin/mysqld_safe"
-alias prydev='RAILS_ENV=development pry -r ./config/environment'
 
 function fa() {
   alias|grep $1

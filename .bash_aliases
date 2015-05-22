@@ -1,4 +1,5 @@
 alias be="bundle exec"
+alias bspec='bundle exec rake rspec SPEC_OPTS="-f d -c"'
 alias g='git'
 alias h='history'
 alias hseed="heroku run rake db:seed_fu"
