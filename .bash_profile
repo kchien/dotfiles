@@ -37,4 +37,4 @@ export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 export PATH=$PATH:$GOPATH/bin:/usr/local/opt/go/libexec/bin
 
-
+export SPEC_OPTS="--format documentation --color"
