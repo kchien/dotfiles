@@ -2,6 +2,10 @@ if [ -f $HOME/.bash_aliases ]; then
   source ~/.bash_aliases
 fi
 
+ec2l () {
+  source $HOME/.private/aws/$1
+}
+
 function fa() {
   alias|grep $1
 }
@@ -10,9 +14,6 @@ pryr() {
   RAILS_ENV=$1 pry -r ./config/environment
 }
 
-ec2l () {
-  source $HOME/.private/aws/$1
-}
 
 export BUNDLER_EDITOR="vim"
 
