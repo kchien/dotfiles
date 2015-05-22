@@ -19,7 +19,7 @@ ec2l () {
   source $HOME/.private/aws/$1
 }
 
-export BUNDLER_EDITOR="mvim"
+export BUNDLER_EDITOR="vim"
 
 #Postgres command line utils
 PATH="/Applications/Postgres93.app/Contents/MacOS/bin:$PATH"
