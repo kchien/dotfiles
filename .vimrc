@@ -68,4 +68,11 @@ endfunction
 :command! PromoteToLet :call PromoteToLet()
 :map <leader>p :PromoteToLet<cr>
 
-
+"""""""""""
+" Run tests
+"""""""""""
+function! RunTests()
+  " Run on current file
+  :!rspec --color %
+endf
+map <leader>T :call RunTests()<CR>
