@@ -1,6 +1,11 @@
 execute pathogen#infect()
 set nocompatible
 set autoindent
+"Insert space characters when tab key is pressed or when indenting
+set expandtab
+set shiftwidth=2
+set softtabstop=2
+
 set number
 set history=50
 set ruler
