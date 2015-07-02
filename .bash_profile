@@ -2,6 +2,10 @@ if [ -f $HOME/.bash_aliases ]; then
   source ~/.bash_aliases
 fi
 
+if [ -f $HOME/.git-completion.bash ]; then
+  source ~/.git-completion.bash
+fi
+
 ec2l () {
   source $HOME/.private/aws/$1
 }
@@ -26,7 +30,7 @@ export GOPATH=~/go
 export PATH="$HOME/.rbenv/bin:$PATH"
 #Postgres command line utils
 PATH="/Applications/Postgres93.app/Contents/MacOS/bin:$PATH"
-#AWS Elastic Beanstalk 
+#AWS Elastic Beanstalk
 PATH="/Applications/AWS-ElasticBeanstalk-CLI-2.6.0/eb/macosx/python2.7:$PATH"
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
