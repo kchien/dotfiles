@@ -6,6 +6,10 @@ if [ -f $HOME/.git-completion.bash ]; then
   source ~/.git-completion.bash
 fi
 
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi
+
 ec2l () {
   source $HOME/.private/aws/$1
 }
