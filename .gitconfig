@@ -23,3 +23,5 @@
 [core]
 	excludesfile = /Users/ken/.gitignore_global
 	editor = vim
+[color "diff"]
+        meta = blue black ul
