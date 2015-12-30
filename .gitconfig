@@ -3,6 +3,7 @@
 	email = ken.chien@gmail.com
 [alias]
         b = branch
+        bm = branch --merged
 	f = fetch
 	s = status
         d = diff --color
