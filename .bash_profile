@@ -6,6 +6,10 @@ if [ -f $HOME/.git-completion.bash ]; then
   source ~/.git-completion.bash
 fi
 
+if [ -f $HOME/.passwords ]; then
+  source ~/.passwords
+fi
+
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
