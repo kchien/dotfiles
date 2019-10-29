@@ -18,6 +18,7 @@
 	rc = rebase --continue
 	rh = reset --hard HEAD
 	rs = rebase -i HEAD~2
+	rv = remote -v
 	sp = stash pop
 [credential]
 	helper = osxkeychain
